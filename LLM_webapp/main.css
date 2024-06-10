@@ -1,0 +1,112 @@
+/*.gpt_message td {*/
+/*    margin-left: 30px;*/
+/*    margin-bottom: 20px;*/
+/*    margin-top: 20px;*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    padding: 20px;*/
+/*    !*background-color: #ff462b;*!*/
+/*    background-color: #adec0f;*/
+/*    border-radius: 20px;*/
+/*    max-width: 80%;*/
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+/*    font-size: large;*/
+/*}*/
+
+/*.user_message td {*/
+/*    margin-right: 30px;*/
+/*    margin-bottom: 20px;*/
+/*    margin-top: 20px;*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    padding: 20px;*/
+/*    color:white;*/
+/*    !*background-color: #140a1e;*!*/
+/*    background-color: #23023d;*/
+/*    border-radius: 20px;*/
+/*    max-width: 80%;*/
+/*    float: right;*/
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+/*    font-size: large;*/
+/*}*/
+
+
+
+body {
+  overflow: hidden;
+}
+
+.gpt_message td  {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background-color: #8b5ca2;
+    border-radius: 20px;
+    max-width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: large;
+}
+
+.user_message td  {
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background-color: #b583e5;
+    border-radius: 20px;
+    max-width: 80%;
+    color:white;
+    float: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: large;
+  }
+
+  :root {
+    --element-padding: 1.5rem;
+  }
+  .button
+  {
+      background-color: #91ff2b;
+  }
+
+  #root > .MuiBox-root {
+    min-height: 100%;
+  }
+  main {
+    flex: 0 0 100%;
+  }
+.new-conversation-button {
+        background-color: #8b5ca2; /* Replace with your desired color */
+        color: black; /* Optional: Change text color */
+        display: inline-block;
+        /*border-radius: 20px;*/
+        width: fit-content;
+    max-width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*font-size: large;*/
+    }
+
+  /**** PASSED PROMPT LIST ****/
+
+  .past_prompts_list .MuiPaper-root {
+    background-color: var(--color-background);
+  }
+
+  .past_prompts_list li + li {
+    border-top: 1px solid var(--color-paper);
+  }
+
+  .past_prompts_list .MuiTreeItem-content {
+    font-style: italic;
+    padding: var(--spacing-half);
+    user-select: text !important;
+    cursor: pointer;
+  }
+  .past_prompts_list .MuiTreeItem-iconContainer {
+    display: none;
+  }
