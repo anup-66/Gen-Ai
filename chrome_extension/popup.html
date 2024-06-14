@@ -1,12 +1,75 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--  <title>Web Page Q&A</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--  <input type="text" id="question" placeholder="Ask a question...">-->
+<!--  <button id="askButton">Ask</button>-->
+<!--  <div id="answer"></div>-->
+<!--  <script src="popup.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Web Page Q&A</title>
+  <style>
+    /* Input box */
+#question {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+/* Ask button */
+#askButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+#askButton:hover {
+  background-color: #0056b3;
+}
+/* Container styles */
+#container {
+  width: 400px; /* Adjust width as needed */
+  margin: 20px auto;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+
+
+    </style>
 </head>
 <body>
-  <input type="text" id="question" placeholder="Ask a question...">
-  <button id="askButton">Ask</button>
-  <div id="answer"></div>
+  <div id="container">
+    <div id="header">
+      <span id="header-text">Web Page Q&A</span>
+      <span id="close-button">&times;</span>
+    </div>
+    <div id="content">
+      <input type="text" id="question" placeholder="Ask a question...">
+      <button id="askButton">Ask</button>
+      <div id="answer"></div>
+    </div>
+    <div id="resizer"></div>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
